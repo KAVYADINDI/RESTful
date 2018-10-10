@@ -1,0 +1,5 @@
+package com.capgemini.productapp.repository;
+
+public interface ProuctRepository {
+
+}

@@ -1,0 +1,11 @@
+package com.capgemini.ecommerceapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.capgemini.ecommerceapp.service.OrderService;
+
+public class OrderController {
+
+	@Autowired
+	OrderService orderservice;
+}

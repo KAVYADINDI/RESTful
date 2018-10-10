@@ -1,0 +1,57 @@
+package com.capgemini.orderapp.entity;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+public class Items {
+
+	private int itemId;
+	private int itemQuantity;
+	private int productId;
+	private int itemTotalAmount;
+	@ManyToOne
+	@JoinColumn(name="orderId")
+	private Orders order;
+	public Items() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Items(int itemId, int itemQuantity, int productId, int itemTotalAmount, Orders order) {
+		super();
+		this.itemId = itemId;
+		this.itemQuantity = itemQuantity;
+		this.productId = productId;
+		this.itemTotalAmount = itemTotalAmount;
+		this.order = order;
+	}
+	public int getItemId() {
+		return itemId;
+	}
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
+	}
+	public int getItemQuantity() {
+		return itemQuantity;
+	}
+	public void setItemQuantity(int itemQuantity) {
+		this.itemQuantity = itemQuantity;
+	}
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	public int getItemTotalAmount() {
+		return itemTotalAmount;
+	}
+	public void setItemTotalAmount(int itemTotalAmount) {
+		this.itemTotalAmount = itemTotalAmount;
+	}
+	public Orders getOrder() {
+		return order;
+	}
+	public void setOrder(Orders order) {
+		this.order = order;
+	}
+}

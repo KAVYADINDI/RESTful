@@ -1,0 +1,5 @@
+package com.capgemini.ecommerceapp.service;
+
+public interface OrderService {
+
+}

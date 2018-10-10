@@ -1,0 +1,18 @@
+package com.capgemini.productapp.entity;
+
+import java.util.HashMap;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "products")
+public class Product {
+
+	@Id
+	private int productId;
+	private String productName;
+	private String productCategory;
+	private double productPrice;
+	private HashMap<String, Object> specifications;
+
+}

@@ -1,0 +1,15 @@
+package com.capgemini.orderapp.entity;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+public class Items {
+
+	private int itemId;
+	private int itemQuantity;
+	private int productId;
+	private int itemTotalAmount;
+	@ManyToOne
+	@JoinColumn(name="orderId")
+	private Orders order;
+}

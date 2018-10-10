@@ -1,0 +1,29 @@
+package com.capgemini.orderapp.controller;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.capgemini.orderapp.service.OrderService;
+
+@Controller
+public class OrderController {
+
+	static Logger logger = LoggerFactory.getLogger(OrderController.class);
+
+	@Autowired
+	private OrderService orderService;
+	
+	@PostMapping("/order")
+	public ResponseEntity<Order> addOrder(@RequestBody Order order) {
+		logger.info("Add new order: " + order );
+		return new ResponseEntity<Order>(orderService.addOrder(order), HttpStatus.OK);
+	}
+
+	@GetMapping("/order/{orderId}")
+	public ResponseEntity<Order> findOrderById(@PathVariable int orderId) {
+		logger.info("Get order by Id: " + orderId);
+		return new ResponseEntity<Order>(orderService.getOrderById(orderId), HttpStatus.OK);
+	}
+}

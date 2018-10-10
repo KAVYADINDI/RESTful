@@ -1,0 +1,5 @@
+package com.capgemini.customerapp.service.impl;
+
+public class CustomerServiceImpl {
+
+}

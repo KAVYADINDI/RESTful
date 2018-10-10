@@ -1,0 +1,9 @@
+#server
+server.port=9990
+
+#mongodb database
+spring.data.mongodb.host=localhost
+spring.data.mongodb.database=kavya
+spring.data.mongodb.port=27017
+
+#

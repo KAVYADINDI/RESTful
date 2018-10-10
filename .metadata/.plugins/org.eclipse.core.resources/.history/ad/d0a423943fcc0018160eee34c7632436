@@ -1,0 +1,23 @@
+package com.capgemini.orderapp.entity;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+@Entity
+public class Orders {
+
+	private int orderId;
+	private double orderTotalAmount;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private LocalDate orderDate;
+	private int customerId;
+	@OneToMany(mappedBy="order")
+	private  List<Items> items;
+	
+}

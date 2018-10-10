@@ -1,0 +1,16 @@
+package com.capgemini.ecommerceapp.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Items")
+public class Items {
+	@Id
+	private int itemId;
+	private int productQuantity;
+	private int productId;
+	private int itemTotalAmount;
+	private Orders order;
+
+	
+}

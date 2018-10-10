@@ -1,0 +1,5 @@
+package com.capgemini.productapp.service.impl;
+
+public class ProductServiceImpl {
+
+}

@@ -1,0 +1,20 @@
+package com.capgemini.ecommerceapp.entity;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Items")
+public class Items {
+	private int productId;
+	private int productQuantity;
+	private int itemTotalAmount;
+
+	
+	public void increaseProductQuantity()
+	{
+		this.productQuantity++;
+	}
+	public void decreaseProductQuantity()
+	{
+		this.productQuantity--;
+	}
+}

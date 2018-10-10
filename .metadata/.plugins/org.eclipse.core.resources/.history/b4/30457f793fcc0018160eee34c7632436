@@ -1,0 +1,10 @@
+package com.capgemini.orderapp.entity;
+
+public class Items {
+
+	private int itemId;
+	private int itemQuantity;
+	private int productId;
+	private int itemTotalAmount;
+	
+}

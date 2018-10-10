@@ -1,0 +1,5 @@
+package com.capgemini.ecommerceapp.entity;
+
+public class Address {
+
+}

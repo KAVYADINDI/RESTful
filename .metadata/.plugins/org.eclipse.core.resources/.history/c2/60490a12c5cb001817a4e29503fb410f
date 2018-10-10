@@ -1,0 +1,5 @@
+package com.capgemini.productapp.service;
+
+public interface ProductService {
+
+}

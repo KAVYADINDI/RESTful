@@ -1,0 +1,51 @@
+package com.capgemini.ecommerceapp.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Items")
+public class Items {
+
+	private int productQuantity;
+	private int productId;
+	private int itemTotalAmount;
+
+	public Items(int productQuantity, int productId, int itemTotalAmount) {
+		super();
+
+		this.productQuantity = productQuantity;
+		this.productId = productId;
+		this.itemTotalAmount = itemTotalAmount;
+		
+	}
+	public Items() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getProductQuantity() {
+		return productQuantity;
+	}
+	public void setProductQuantity(int productQuantity) {
+		this.productQuantity = productQuantity;
+	}
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	public int getItemTotalAmount() {
+		return itemTotalAmount;
+	}
+	public void setItemTotalAmount(int itemTotalAmount) {
+		this.itemTotalAmount = itemTotalAmount;
+	}
+	public void increaseProductQuantity()
+	{
+		this.productQuantity++;
+	}
+	public void decreaseProductQuantity()
+	{
+		this.productQuantity--;
+	}
+}
