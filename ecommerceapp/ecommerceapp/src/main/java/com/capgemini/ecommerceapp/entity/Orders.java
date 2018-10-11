@@ -1,7 +1,6 @@
 package com.capgemini.ecommerceapp.entity;
 
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Set;
 
 import org.springframework.data.annotation.Id;
@@ -11,26 +10,35 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Document(collection = "Orders")
 public class Orders {
 	
+	
 	@Id
 	private int orderId;
 	private double orderTotalAmount;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate orderDate;
 	private int customerId;
-	private List<Items> items;
-	public void setItems(List<Items> items) {
-		this.items = items;
-	}
+	private Set<Items> items;
+	private String status;
+	private static int value=1000;
 	public Orders() {
 		super();
-		// TODO Auto-generated constructor stub
+		orderId = value++;
+	}
+	public Orders(double orderTotalAmount, LocalDate orderDate, int customerId, Set<Items> items,
+			String status) {
+		this();
+		this.orderTotalAmount = orderTotalAmount;
+		this.orderDate = orderDate;
+		this.customerId = customerId;
+		this.items = items;
+		this.setStatus(status);
 	}
 	public int getOrderId() {
 		return orderId;
 	}
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
-	}
+//	public void setOrderId(int orderId) {
+//		this.orderId = orderId;
+//	}
 	public double getOrderTotalAmount() {
 		return orderTotalAmount;
 	}
@@ -49,22 +57,23 @@ public class Orders {
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
-	public List<Items> getItems() {
+	public Set<Items> getItems() {
 		return items;
 	}
-	
-	public Orders(int orderId, double orderTotalAmount, LocalDate orderDate, int customerId, List<Items> items) {
-		super();
-		this.orderId = orderId;
-		this.orderTotalAmount = orderTotalAmount;
-		this.orderDate = orderDate;
-		this.customerId = customerId;
+	public void setItems(Set<Items> items) {
 		this.items = items;
 	}
-	@Override
-	public String toString() {
-		return "Orders [orderId=" + orderId + ", orderTotalAmount=" + orderTotalAmount + ", orderDate=" + orderDate
-				+ ", customerId=" + customerId + ", items=" + items + "]";
+	public String getStatus() {
+		return status;
 	}
-	
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public static int getValue() {
+		return value;
+	}
+	public static void setValue(int value) {
+		Orders.value = value;
+	}
+		
 }

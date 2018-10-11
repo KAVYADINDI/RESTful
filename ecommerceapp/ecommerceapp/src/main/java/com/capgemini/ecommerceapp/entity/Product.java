@@ -62,4 +62,43 @@ public class Product {
 				+ productCategory + ", productPrice=" + productPrice + ", specifications=" + specifications + "]";
 	}
 	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((productCategory == null) ? 0 : productCategory.hashCode());
+		result = prime * result + productId;
+		result = prime * result + ((productName == null) ? 0 : productName.hashCode());
+		result = prime * result + ((specifications == null) ? 0 : specifications.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		if (productCategory == null) {
+			if (other.productCategory != null)
+				return false;
+		} else if (!productCategory.equals(other.productCategory))
+			return false;
+		if (productId != other.productId)
+			return false;
+		if (productName == null) {
+			if (other.productName != null)
+				return false;
+		} else if (!productName.equals(other.productName))
+			return false;
+		if (specifications == null) {
+			if (other.specifications != null)
+				return false;
+		} else if (!specifications.equals(other.specifications))
+			return false;
+		return true;
+	}
 }

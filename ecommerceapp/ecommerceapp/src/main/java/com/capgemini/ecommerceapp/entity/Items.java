@@ -3,9 +3,10 @@ package com.capgemini.ecommerceapp.entity;
 public class Items {
 	private Product product;
 	private int productQuantity;
-	private int itemTotalAmount;
+	private int itemAmount;
 	
 
+	
 	public Product getProduct() {
 		return product;
 	}
@@ -18,17 +19,17 @@ public class Items {
 	public void setProductQuantity(int productQuantity) {
 		this.productQuantity = productQuantity;
 	}
-	public int getItemTotalAmount() {
-		return itemTotalAmount;
+	public int getItemAmount() {
+		return itemAmount;
 	}
-	public void setItemTotalAmount(int itemTotalAmount) {
-		this.itemTotalAmount = itemTotalAmount;
+	public void setItemAmount(int itemAmount) {
+		this.itemAmount = itemAmount;
 	}
-	public Items(Product product, int productQuantity, int itemTotalAmount) {
+	public Items(Product product, int productQuantity, int itemAmount) {
 		super();
 		this.product = product;
 		this.productQuantity = productQuantity;
-		this.itemTotalAmount = itemTotalAmount;
+		this.itemAmount = itemAmount;
 	}
 	public Items() {
 		super();
@@ -41,5 +42,5 @@ public class Items {
 	public void decreaseProductQuantity()
 	{
 		this.productQuantity--;
-	}
+	}	
 }
