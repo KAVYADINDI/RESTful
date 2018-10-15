@@ -27,15 +27,23 @@ body,h1,h2,h3,h4,h5,h6{font-family: sans-serif}
       <div class="w3-container">
         <img src="/images/oppo.jpg" height=100 width =100>
          <br><br>
-            <button ><a href="/addtocart?productId=125">Add to Cart</a></button>
-        <p>Oppo<br><b>Rs.9000</b></p>
+            <button ><a href="/addtocart?productId=123">Add to Cart</a></button>
+        <p>Oppo<br><b>Rs.9000</b>
+        		<br><span class="heading">User Rating</span>
+        		 <span class="fa fa-star checked"></span>
+        		  <span class="fa fa-star checked"></span> 
+        		  <span class="fa fa-star checked"></span></p>
       </div>
       
     <div class="w3-container">
         <img src="/images/vivo.jpg" height=100 width =100>
          <br><br>
             <button><a href="/addtocart?productId=124">Add to Cart</a></button>
-        <p>Vivo<br><b>Rs.10000</b></p>
+        <p>Vivo<br><b>Rs.10000</b>
+        <br><span class="heading">User Rating</span>
+        		 <span class="fa fa-star checked"></span>
+        		  <span class="fa fa-star checked"></span> 
+        		  <span class="fa fa-star checked"></span></p>
       </div>
    
     </div>
@@ -45,15 +53,25 @@ body,h1,h2,h3,h4,h5,h6{font-family: sans-serif}
       <div class="w3-container">
         <img src="/images/one+.jpg" height=100 width =100>
          <br><br>
-            <button><a href="/addtocart?productId=1236">Add to Cart</a></button>
-        <p>One+<br><b>Rs.14000</b></p>
+            <button><a href="/addtocart?productId=125">Add to Cart</a></button>
+        <p>One+<br><b>Rs.14000</b>
+        <br><span class="heading">User Rating</span>
+        		 <span class="fa fa-star checked"></span>
+        		  <span class="fa fa-star checked"></span> 
+        		  <span class="fa fa-star checked"></span>
+        		   <span class="fa fa-star checked"></span></p>
       </div>
       
       <div class="w3-container">
         <img src="/images/iPhone.jpg" height=100 width =100>
          <br><br>
-            <button> <a href="/addtocart?product.productId=1237">Add to Cart</a></button>
-        <p>iPhone<br><b>Rs.20000</b></p>
+            <button> <a href="/addtocart?productId=126">Add to Cart</a></button>
+        <p>iPhone<br><b>Rs.20000</b>
+        <br><span class="heading">User Rating</span>
+        		 <span class="fa fa-star checked"></span>
+        		  <span class="fa fa-star checked"></span> 
+        		  <span class="fa fa-star checked"></span>
+        		   <span class="fa fa-star checked"></span></p>
       </div>
       
     </div>
@@ -63,15 +81,21 @@ body,h1,h2,h3,h4,h5,h6{font-family: sans-serif}
     <div class="w3-container">
         <img src="/images/samsung.jpg" height=100 width =100>
          <br><br>
-            <button><a href="/addtocart?product.productId=1238">Add to Cart</a></button>
-        <p>Samsung<br><b>Rs.7000</b></p>
+            <button><a href="/addtocart?productId=127">Add to Cart</a></button>
+        <p>Samsung<br><b>Rs.7000</b>
+           <br><span class="heading">User Rating</span>
+        		 <span class="fa fa-star checked"></span>
+        		  <span class="fa fa-star checked"></span> </p>
       </div>
       <div class="w3-container">
        
           <img src="/images/mortorolla.jpg" height=100 width =100>
       <br><br>
-            <button><a href="/addtocart?product.productId=1239">Add to Cart</a></button>
-        <p>Mortorolla<br><b class="w3-text-black">Rs.8000</b></p>
+            <button><a href="/addtocart?productId=128">Add to Cart</a></button>
+        <p>Mortorolla<br><b class="w3-text-black">Rs.8000</b>
+           <br><span class="heading">User Rating</span>
+        		 <span class="fa fa-star checked"></span>
+        		  <span class="fa fa-star checked"></span> </p>
       </div>
     </div>
  </div>

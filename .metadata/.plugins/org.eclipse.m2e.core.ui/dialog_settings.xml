@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\KAKALIDI\workspace\RESTful\ConfigServiceApplication"/>
 			<item value="C:\Users\KAKALIDI\workspace\RESTful\website"/>
 			<item value="C:\Users\KAKALIDI\workspace\RESTful\ecommerceapp"/>
 			<item value="C:\Users\KAKALIDI\workspace\RESTful\orderapp"/>

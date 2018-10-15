@@ -4,10 +4,17 @@ package com.capgemini.website.entity;
 public class Items {
 	private Product product;
 	private int productQuantity;
-	private int itemAmount;
-	
-
-	
+	private double itemAmount;
+	public Items() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Items(Product product, int productQuantity, double itemAmount) {
+		super();
+		this.product = product;
+		this.productQuantity = productQuantity;
+		this.itemAmount = itemAmount;
+	}
 	public Product getProduct() {
 		return product;
 	}
@@ -20,28 +27,15 @@ public class Items {
 	public void setProductQuantity(int productQuantity) {
 		this.productQuantity = productQuantity;
 	}
-	public int getItemAmount() {
+	public double getItemAmount() {
 		return itemAmount;
 	}
-	public void setItemAmount(int itemAmount) {
+	public void setItemAmount(double itemAmount) {
 		this.itemAmount = itemAmount;
 	}
-	public Items(Product product, int productQuantity, int itemAmount) {
-		super();
-		this.product = product;
-		this.productQuantity = productQuantity;
-		this.itemAmount = itemAmount;
+	@Override
+	public String toString() {
+		return "Items [product=" + product + ", productQuantity=" + productQuantity + ", itemAmount=" + itemAmount
+				+ "]";
 	}
-	public Items() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public void increaseProductQuantity()
-	{
-		this.productQuantity++;
-	}
-	public void decreaseProductQuantity()
-	{
-		this.productQuantity--;
-	}	
 }

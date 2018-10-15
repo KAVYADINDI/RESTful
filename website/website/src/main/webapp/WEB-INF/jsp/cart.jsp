@@ -24,12 +24,11 @@
 			<c:forEach var="i" items="${sessionScope.cart}">
 				<tr>
 				<td>${i.product.productId}</td>
-				<td>${i.quantity}</td>
-				<td>${i.price}</td>
+				<td>${i.productQuantity}</td>
+				<td>${i.itemAmount}</td>
 				</tr>
 			</c:forEach>
 			<tr>
-				<td></td>
 				<td></td>
 				<td></td>
 				<td><strong>Total: ${sessionScope.totalAmount}</strong></td>
